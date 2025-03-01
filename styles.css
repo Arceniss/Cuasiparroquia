@@ -1,0 +1,105 @@
+body {
+    background-color: #edede9;
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: left;
+    line-height: 1.2rem;
+    font-weight: 900;
+}
+
+h2 {
+    text-align: left;
+    font-weight: 500;
+    line-height: 1rem;
+    margin-bottom: 1rem
+}
+
+p {
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+hr {
+    border: 1px solid #edede9;
+    margin: 0;
+    margin-top: 1px;
+
+}
+
+div {
+    margin: 10px;
+    padding: 10px;
+    background-color: #d6ccc2;
+    border-radius: 0.5rem;
+}
+
+nav {
+    background-color: #333;
+    position: sticky;
+    top: 0; 
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+  }
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #d5bdaf;
+    text-decoration: none;
+    padding: 10px 0 10px 20px;
+    display: block; 
+}
+
+nav a.active, nav li.active a {
+    color: white; 
+  }
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    nav ul li a { font-size: small; }
+    body { font-size: 16px; }
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.2em; }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1200px) {
+    nav ul li a { font-size: medium; }
+    body { font-size: 20px; }
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 1.7em; }
+    
+}
+
+.container1 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #333;
+}
+
+.container1 h1, .container1 h2 {
+    color: #edede9; 
+    line-height: 0.5rem;    
+}
+ /*
+div table {
+   font-size: small;
+}
+*/
