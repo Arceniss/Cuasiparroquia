@@ -1,0 +1,125 @@
+Paleta 1:
+.color1 { #ffffff };
+.color2 { #a1c1be };
+.color3 { #59554e };
+.color4 { #f3f4e5 };
+.color5 { #e2e3d9 };
+
+Paleta 2:
+.color1 { #f0f0d8 };
+.color2 { #d8d8c0 };
+.color3 { #7a8370 };
+.color4 { #df8615 };
+.color5 { #f84600 };
+
+Paleta 3:
+.color1 { #e84d5b };
+.color2 { #eae2cf };
+.color3 { #b4ccb9 };
+.color4 { #26979f };
+.color5 { #3b3b3b };
+
+Paleta 4:
+.color1 { #c3b68c };
+.color2 { #6e5b54 };
+.color3 { #b94866 };
+.color4 { #afb7a0 };
+.color5 { #f4eed4 };
+
+Paleta 5:
+.color1 { #ffffff };
+.color2 { #fffaeb };
+.color3 { #f0f0d8 };
+.color4 { #cfcfcf };
+.color5 { #967c52 };
+
+¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡
+
+1. Inicio:
+
+Bienvenida:
+    Un mensaje cálido y acogedor del párroco o líder de la comunidad.
+    Una breve descripción de la Cuasiparroquia y su misión.
+
+Información destacada:
+    Horarios de misas y eventos importantes.
+    Anuncios relevantes (próximos eventos, campañas, etc.).
+    Una galería de fotos o videos que muestren la vida de la comunidad.
+
+Enlaces rápidos:
+    Acceso directo a las secciones más visitadas (Capillas, Sacramentos, Contacto).
+
+2. Capillas:
+
+Página principal de Capillas:
+    Un mapa o lista con la ubicación de todas las capillas.
+    Breve descripción de cada capilla.
+    Enlaces a las páginas individuales de cada capilla.
+
+Páginas individuales de Capillas:
+    Información detallada sobre cada capilla (historia, horarios, eventos especiales).
+    Galería de fotos de la capilla.
+    Información de contacto (si aplica).
+
+3. Sacramentos:
+
+Página principal de Sacramentos:
+    Breve descripción de cada sacramento.
+    Requisitos y preparación para cada sacramento.
+    Información sobre cómo programar o solicitar cada sacramento.
+
+Páginas individuales de Sacramentos:
+    Información detallada sobre cada sacramento.
+    Preguntas frecuentes.
+    Testimonios (si aplica).
+
+4. Catequesis:
+
+Página principal de Catequesis:
+    Descripción de los programas de catequesis ofrecidos.
+    Horarios y calendarios.
+    Información sobre cómo inscribirse.
+
+Páginas individuales de Catequesis:
+    Información detallada sobre cada programa (primera comunión, confirmación, adultos).
+    Materiales de estudio o recursos en línea.
+
+5. Social:
+
+Página principal de Social:
+    Descripción de las iniciativas sociales de la Cuasiparroquia.
+    Información sobre cómo colaborar o donar.
+
+Páginas individuales de Social:
+    Información detallada sobre Cáritas y el ancianato.
+    Historias de impacto o testimonios.
+
+6. Grupos:
+
+Página principal de Grupos:
+    Descripción de los grupos y ministerios de la Cuasiparroquia.
+    Información sobre cómo unirse.
+
+Páginas individuales de Grupos:
+    Información detallada sobre cada grupo (ministerio de música, monaguillos, etc.).
+    Horarios de reuniones o ensayos.
+    Galería de fotos o videos.
+
+7. Contacto:
+
+Información de contacto:
+    Dirección, números de teléfono, correo electrónico.
+    Formulario de contacto en línea.
+    Mapa de ubicación.
+
+Horarios de oficina:
+    Información sobre cuándo la oficina parroquial está abierta.
+
+Sugerencias adicionales:
+
+Diseño responsivo: Asegúrate de que tu sitio web se vea bien en dispositivos móviles.
+Galería de fotos y videos: Utiliza imágenes y videos para mostrar la vida de la comunidad.
+Calendario de eventos: Mantén un calendario actualizado con los eventos importantes.
+Integración con redes sociales: Incluye enlaces a las redes sociales de la Cuasiparroquia.
+Accesibilidad: Asegúrate de que tu sitio web sea accesible para personas con discapacidades.
+Espero que estas ideas te ayuden a crear un sitio web informativo y atractivo para la Cuasiparroquia.
