@@ -1,0 +1,36 @@
+:root {
+    --background-color: #e0e0e0;
+    --font-color: #333;
+    --white: #f0f0f0;
+    --dark-grey: #333;
+    --light-grey: #d0d0d0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+div {
+    background-color: var(--white);
+}
+
+nav {
+    background-color: var(--background-color);
+}
+
+nav li {
+    background-color: var(--background-color);
+}
+
+nav a:hover {
+    background-color: var(--light-grey);
+}
+
+.container0 {
+    background-color: var(--dark-grey);
+}
+
+.container0 h1, .container0 h2 {
+    color: var(--white);
+}
