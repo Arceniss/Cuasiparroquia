@@ -38,10 +38,13 @@ h3 {
     text-align: left;    
     font-weight: 400;
     font-size: 2rem;
+    /*background-color: aqua;*/
+    margin: 0px 0px 20px 0px;    
 }
 
 p {
     text-align: left;
+    margin: 20px 0px 0px 0px;
 }
 
 hr {
@@ -58,10 +61,13 @@ div {
 .containerPadre {
     width: 100%-20px;
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;    
     padding: 5px;
     background-color: transparent;
+}
+
+#Bienvenida {	
+    grid-template-columns: 1fr 1fr;
 }
 
 .containerHijo {
@@ -87,10 +93,11 @@ div {
         font-size: 1.5rem;
     }
     p {
-        font-size: 1.1rem;
+        font-size: 1.0rem;
+        line-height: 1.2rem;
     }
 
-    .containerPadre {
+    #Bienvenida {
         display: grid;
         grid-template-columns: 1fr;
     }
