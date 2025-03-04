@@ -12,11 +12,14 @@
 </head>
 
 <body>
-    <nav>
+    <div id="menu-mobile" style="margin: 0; padding: 0;">
+        <span style="margin-top: auto; margin-bottom: auto; margin-right: auto; margin-left: 10px; padding: 0; font-style: italic; font-size: small;">cuasicoromoto@gmail.com</span><button id="menu-toggle" class="menu-icon" style="margin-right: 5px;">&#9776;</button>
+    </div>
+    <nav id="nav-bar">
+        <button id="menu-close" class="menu-close-icon">&times;</button>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Capillas</a>
+            <li class="dropdown"><a href="index.html">Inicio</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle">Capillas</a>
                 <ul class="dropdown-content">
                     <li><a href="capillaSanJosé.html">Capilla San José</a></li>
                     <li><a href="capillaDolores.html">Capilla Nuestra Señora de los Dolores</a></li>
@@ -26,8 +29,7 @@
                     <li><a href="comunidadAuxiliadora.html">Comunidad María Auxiliadora</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Sacramentos</a>
+            <li class="dropdown"><a href="#" class="dropdown-toggle">Sacramentos</a>
                 <ul class="dropdown-content">
                     <li><a href="sacramentosBautismo.html">Bautismo</a></li>
                     <li><a href="sacramentosComunión.html">Comunión</a></li>
@@ -38,16 +40,14 @@
                     <li><a href="sacramentosMatrimonio.html">Matrimonio</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Catequesis</a>
+            <li class="dropdown"><a href="#" class="dropdown-toggle">Catequesis</a>
                 <ul class="dropdown-content">
                     <li><a href="catequesisComunión.html">Primera Comunión</a></li>
                     <li><a href="catequesisConfirmación.html">Confirmación</a></li>
                     <li><a href="catequesisAdultos.html">Adultos</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Grupos</a>
+            <li class="dropdown"><a href="#" class="dropdown-toggle">Grupos</a>
                 <ul class="dropdown-content">
                     <li><a href="gruposMinisterioMúsica.html">Ministerio de Música San José</a></li>
                     <li><a href="gruposMonaguillos.html">Monaguillos</a></li>
@@ -55,18 +55,33 @@
                     <li><a href="gruposJuniors.html">Juniors de Jesús</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Social</a>
+            <li class="dropdown"><a href="#" class="dropdown-toggle">Social</a>
                 <ul class="dropdown-content">
                     <li><a href="socialCáritas.html">Cáritas</a></li>
                     <li><a href="socialAncianato.html">Ancianato</a></li>
                 </ul>
             </li>
-            <li><a href="icolumbario.html">Columbario</a></li>
-            <li><a href="idescargas.html">Descargas</a></li>
-            <li><a href="icontacto.html">Contacto</a></li>
+            <li class="dropdown"><a href="icolumbario.html">Columbario</a></li>
+            <li class="dropdown"><a href="idescargas.html">Descargas</a></li>
+            <li class="dropdown"><a href="icontacto.html">Contacto</a></li>
         </ul>
     </nav>
-</body>
-</html>
 
+    <script src="js/nav.js"></script>
+    <!--
+        <script>
+            // Obtener el botón por su ID
+            const boton = document.getElementById("menu-toggle");
+            
+            // Función para mostrar el aviso
+            function mostrarAviso() {
+                alert("¡Has hecho click en el botón!");
+            }
+            
+            // Agregar el event listener al botón
+            boton.addEventListener("click", mostrarAviso);
+        </script>
+    -->
+</body>
+
+</html>

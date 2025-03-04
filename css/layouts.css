@@ -1,8 +1,15 @@
 body {
     font-family: Calibri, sans-serif;
-    font-size: 14pt;
+    font-size: 16pt;
     margin: 0;
     padding: 0;
+    line-height: 1.5rem;
+}
+
+.container0 {
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 0;
 }
 
 .container0 h1 {
@@ -11,8 +18,7 @@ body {
 
 .container0 h2 {
     font-weight: 100; 
-    line-height: 0.4rem;
-    
+    line-height: 0.4rem;    
 }
 
 h1 {
@@ -28,9 +34,14 @@ h2 {
     margin-bottom: 1rem;
 }
 
+h3 {
+    text-align: left;    
+    font-weight: 400;
+    font-size: 2rem;
+}
+
 p {
     text-align: left;
-    line-height: 1.5rem;
 }
 
 hr {
@@ -40,44 +51,47 @@ hr {
 }
 
 div {
-    margin: 10px;
-    padding: 10px;
     border-radius: 0.5rem;
+    
 }
 
-.container0 {
+.containerPadre {
+    width: 100%-20px;
     margin: 0;
-    padding: 10px 20px;
-    border-radius: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+    background-color: transparent;
 }
 
-@media (max-width: 600px) {
-    /*nav ul li a {
-        font-size: small;
-    }*/
+.containerHijo {
+    margin: 5px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 4px 1px #c0c0c0
+}
+
+
+@media (max-width: 720px) {
     body {
         font-size: 14px;
     }
+
     h1 {
-        font-size: 1.6em;
+        font-size: 1.5rem;
     }
     h2 {
-        font-size: 1.2em;
+        font-size: 1.1rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+
+    .containerPadre {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
-/*
-@media (min-width: 1200px) {
-    nav ul li a {
-        font-size: medium;
-    }
-    body {
-        font-size: 20px;
-    }
-    h1 {
-        font-size: 2.5em;
-    }
-    h2 {
-        font-size: 1.7em;
-    }
-}
-*/
