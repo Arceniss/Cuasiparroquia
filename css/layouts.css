@@ -1,41 +1,66 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Calibri, sans-serif;
     font-size: 14pt;
-    padding: 0;
-    margin: 0;
+    font-weight: 300;
 }
 
 h1 {
     line-height: 1rem;
     font-weight: bold;
     font-size: 2.5rem;
-    padding: 0;
-    margin: 0px;
 }
 
 h2 {
     line-height: 1rem;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 2.5rem;
     padding: 1rem 0;
-    margin: 0;
+}
+
+h3 {
+    line-height: normal;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 1rem 0;
 }
 
 p {
-    margin: 20px 0px 0px 0px;
+    margin-top: 20px;
     text-align: left;
-    font-size: 1.5;
+    font-size: 1.5rem;
+}
+
+span {
+    font-size: 1.25rem;
 }
 
 hr {
-    border: 1px solid var(--background-color);
-    margin: 0;
-    margin-top: 1px;
+    border: 1px solid var(--background-color); 
 }
 
-div {
-    border-radius: 0.5rem;    
+.containerPadre {
+    width: 100%-20px;
+    padding: 20px 10px;
+    display: grid;
 }
+
+.containerHijo {
+    margin: 0 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 4px 1px #c0c0c0
+}
+
+/* Estilos del encabezado */
 
 #Encabezado {
     padding: 20px 20px 40px ;
@@ -48,35 +73,101 @@ div {
     line-height: 0.5rem;
 }
 
-.containerPadre {
-    width: 100%-20px;
-    margin: 0;
-    padding: 20px 10px;
-    display: grid;    
-    border-radius: 0;
-}
+/* Estilos de la bienvenida */
 
 #BienvenidaPadre {	
     grid-template-columns: 1fr 1fr;
 }
 
-.containerHijo {
-    margin: 0 10px;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0.5px 0.5px 4px 1px #c0c0c0
+/* Estilos de los horarios */
+
+.espacioVisible {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    background-color: transparent;
+    width: 100%;
+    overflow: hidden;
 }
 
-#HorariosHijo {
-    margin-top: 20px;
-    padding: 0;
-    display: grid;    
-    grid-template-columns: 1fr 1fr 1fr;
+.Horarios {
+    display: flex; 
+    gap: 1%;
+    background-color: transparent;
+    transition: transform 0.5s ease-in-out;
+}
+
+.Horarios hr {
+    border-color: white;
+    margin-bottom: 20px;
+}
+
+#Izq, #Cent, #Der {
+    padding: 10px;
+    box-sizing: border-box; 
+    width: 33.33%; 
+    border-radius: 10px;
+}
+
+#Izq div, #Cent div, #Der div {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    gap: 10px; 
+}
+
+#Izq div span, #Cent div span, #Der div span {
+    flex: 0 1 auto;
+    padding: 2px 0;
+    width: auto; 
+}
+
+/* Estilos de los botones y los indicadores */
+
+.controlDeCarrusel {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background: none;
+}
+
+.controlDeCarrusel button {
+    background: none;
+    border: none;
+    font-size: 2rem; /* Tamaño de las flechas */
+    cursor: pointer;
+    color: #333; /* Color de las flechas */
+}
+
+.indicadoresDeCarrusel {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    background: none;
+}
+
+.indicadoresDeCarrusel .indicador {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.indicadoresDeCarrusel .indicador.activo {
+    background-color: #333;
 }
 
 @media (max-width: 720px) {
+
+    /* Estilos generales */
+
     body {
-        font-size: 14px;
+        font-size: 14pt;
     }
 
     h1 {
@@ -84,15 +175,24 @@ div {
     }
 
     h2 {
-        line-height: 0.5rem;
         font-size: 1.5rem;
         font-weight: 300;
     }
 
+    h3 {
+        font-size: 1.2rem;
+    }
+
     p {
         font-size: 1.0rem;
-        line-height: 1.25;
+        line-height: 1.2rem;
     }
+
+    span {
+        font-size: 0.9rem;
+    }
+
+    /* Estilos del encabezado */
 
     #Encabezado h2 {
         font-weight: 200; 
@@ -100,12 +200,34 @@ div {
         line-height: 0rem;
     }
 
+    /* Estilos de la bienvenida */
+
     #BienvenidaPadre {
         display: grid;
+        row-gap: 20px;
         grid-template-columns: 1fr;
     }
 
-    .containerHijo {
-        margin-bottom: 20px;
+    /* Estilos de los horarios */
+
+    .Horarios {
+        width: 300%;
+        gap: 0;
+        flex-wrap: wrap;
     }
+
+    .Horarios div p {
+        margin-bottom: 10px;
+    }        
+
+    /* Estilos de los botones y los indicadores */
+    
+    .controlDeCarrusel {
+        display: flex; /* Mostrar en dispositivos móviles */
+    }
+
+    .indicadoresDeCarrusel {
+        display: flex; /* Mostrar en dispositivos móviles */
+    }
+
 }
