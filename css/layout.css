@@ -42,20 +42,15 @@ span {
     font-size: 1.25rem;
 }
 
-hr {
-    border: 1px solid var(--background-color); 
-}
-
 .containerPadre {
     width: 100%-20px;
-    padding: 20px 10px;
+    padding: 50px 10px;
     display: grid;
 }
 
 .containerHijo {
     margin: 0 10px;
     padding: 20px;
-    background-color: white;
     border-radius: 10px;
     box-shadow: 0.5px 0.5px 4px 1px #c0c0c0
 }
@@ -86,7 +81,6 @@ hr {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 10px;
-    background-color: transparent;
     width: 100%;
     overflow: hidden;
 }
@@ -94,12 +88,10 @@ hr {
 .Horarios {
     display: flex; 
     gap: 1%;
-    background-color: transparent;
     transition: transform 0.5s ease-in-out;
 }
 
 .Horarios hr {
-    border-color: white;
     margin-bottom: 20px;
 }
 
@@ -130,15 +122,13 @@ hr {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    background: none;
 }
 
 .controlDeCarrusel button {
-    background: none;
     border: none;
-    font-size: 2rem; /* Tamaño de las flechas */
+    font-size: 2rem;
     cursor: pointer;
-    color: #333; /* Color de las flechas */
+    /*color: var(--tono-boton-carrusel);*/
 }
 
 .indicadoresDeCarrusel {
@@ -146,21 +136,59 @@ hr {
     justify-content: center;
     align-items: center;
     margin-top: 5px;
-    background: none;
 }
 
 .indicadoresDeCarrusel .indicador {
-    width: 8px;
-    height: 8px;
-    background-color: #ccc;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    margin: 0 10px;
+    margin: 0 5px;
     cursor: pointer;
 }
 
-.indicadoresDeCarrusel .indicador.activo {
-    background-color: #333;
+/* Estilos de Actividades */
+
+.Actividades {
+    display: flex; 
+    transition: transform 0.5s ease-in-out;
+    width: calc(100%*3);
 }
+
+.marcoDeActividad {
+    flex: 0 0 11.11%;
+    padding: 0.5%;
+}
+
+.Actividad {
+    padding: 10px;
+    border-radius: 10px;
+    /*box-shadow: 0.5px 0.5px 4px 1px #c0c0c0;*/
+}
+
+.Actividades hr {
+    margin-bottom: 20px;
+}
+
+.Actividad div {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    gap: 10px; 
+}
+
+.Actividad span {
+    flex: 0 1 auto;
+    padding: 2px 0;
+    width: auto; 
+}
+
+.alinearDer {
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+
 
 @media (max-width: 720px) {
 
@@ -223,11 +251,11 @@ hr {
     /* Estilos de los botones y los indicadores */
     
     .controlDeCarrusel {
-        display: flex; /* Mostrar en dispositivos móviles */
+        display: flex;
     }
 
     .indicadoresDeCarrusel {
-        display: flex; /* Mostrar en dispositivos móviles */
+        display: flex;
     }
 
 }

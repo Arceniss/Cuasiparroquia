@@ -1,3 +1,10 @@
 {
-    "bitoAI.codeCompletion.enableAutoCompletion": false
+    "bitoAI.codeCompletion.enableAutoCompletion": false,
+    "diffEditor.renderMarginRevertIcon": false,
+    "diffEditor.renderSideBySide": true,
+    "git.decorations.enabled": false,
+    "scm.diffDecorations": "none",
+    "scm.diffDecorationsGutterPattern": {
+        "modified": false
+    }
 }

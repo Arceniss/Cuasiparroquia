@@ -1,29 +1,30 @@
 :root {
-    --white: #f0f0f0;
     --tono-fuerte: #333;
     --tono-medio: #808080;
-    --light-grey: #d0d0d0;
+    --tono-suave2: #e0e0e0;
+    --tono-suave1: #f0f0f0;
+    --tono-boton-carrusel: #666;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--font-color);
-}
-
-div {
-    background-color: var(--white);
+    background-color: var(--tono-suave1);
+    color: var(--tono-fuerte);
 }
 
 nav {
-    background-color: var(--background-color);
+    background-color: var(--tono-suave1);
 }
 
 nav li {
-    background-color: var(--background-color);
+    background-color: var(--tono-suave1);
 }
 
 nav a:hover {
-    background-color: var(--light-grey);
+    background-color: var(--tono-suave2);
+}
+
+hr {
+    border-color: var(--tono-suave1);
 }
 
 #Encabezado {
@@ -31,9 +32,42 @@ nav a:hover {
 }
 
 #Encabezado h1, #Encabezado h2 {
-    color: var(--white);
+    color: white;
+}
+
+#BienvenidaPadre {
+    background-color: var(--tono-suave1);
 }
 
 #HorariosPadre {
+    background-color: var(--tono-medio);
+}
+
+#Izq, #Cent, #Der, .Actividad {
+    background-color: var(--tono-suave1);
+}
+
+#Izq hr, #Cent hr, #Der hr, .Actividad hr {
+    border: 1px solid white;
+}
+
+#ActividadesPadre {
+    background-color: var(--tono-suave1);
+}
+
+.containerHijo {
+    background-color: white;
+}
+
+.controlDeCarrusel button {
+    background: none;
+    color: var(--tono-boton-carrusel);
+}
+
+.indicadoresDeCarrusel .indicador {
+    background-color: var(--tono-suave1);
+}
+
+.indicadoresDeCarrusel .indicador.activo {
     background-color: var(--tono-medio);
 }
