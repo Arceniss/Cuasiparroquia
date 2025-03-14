@@ -155,7 +155,7 @@ span {
 
 .marcoDeActividad {
     flex: 0 0 11.11%;
-    padding: 0.5%;
+    padding: 0 0.5%;
 }
 
 .Actividad {
@@ -186,11 +186,21 @@ span {
     margin-right: 10px;
 }
 
-#carruselDeActividades .espacioVisible .controlDeCarrusel {
-    display: none;
+.controlDeCarrusel2 {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+}
+
+.controlDeCarrusel2 button {
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#btnAnterior {
+    margin-right: auto;
 }
 
 
