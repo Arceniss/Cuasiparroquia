@@ -117,7 +117,7 @@ span {
 
 /* Estilos de los botones y los indicadores */
 
-.controlDeCarrusel {
+#carruselDeHorarios .espacioVisible .controlDeCarrusel {
     display: none;
     justify-content: space-between;
     align-items: center;
@@ -128,7 +128,6 @@ span {
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    /*color: var(--tono-boton-carrusel);*/
 }
 
 .indicadoresDeCarrusel {
@@ -187,7 +186,12 @@ span {
     margin-right: 10px;
 }
 
-
+#carruselDeActividades .espacioVisible .controlDeCarrusel {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
 
 
 @media (max-width: 720px) {
