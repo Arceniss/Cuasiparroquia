@@ -1,8 +1,11 @@
 :root {
-    --tono-fuerte: #333;
-    --tono-medio: #808080;
-    --tono-suave2: #e0e0e0;
-    --tono-suave1: #f0f0f0;
+    --tono-fuerte1: #720000;
+    --tono-fuerte2: #280503;
+    --tono-medio1: #a88a80;
+    --tono-medio2: #8d716d;
+    --tono-suave1: #f5eada;
+    --tono-suave2: #80330010;
+    --tono-hover: #80330010;
     --tono-boton-carrusel: #666;
 }
 
@@ -10,6 +13,24 @@ body {
     background-color: var(--tono-suave1);
     color: var(--tono-fuerte);
 }
+
+h2 {
+    color: var(--tono-fuerte1);
+}
+
+h3 {
+    color: var(--tono-fuerte1);
+}
+
+hr {    
+    border-color: var(--tono-suave1);
+}
+
+.containerHijo {
+    background-color: white;
+}
+
+/* Estilos de la barra de navegación */
 
 nav {
     background-color: var(--tono-suave1);
@@ -20,43 +41,37 @@ nav li {
 }
 
 nav a:hover {
-    background-color: var(--tono-suave2);
+    background-color: var(--tono-hover);
 }
 
-hr {
-    border-color: var(--tono-suave1);
-}
+/* Estilos del encabezado */
 
 #Encabezado {
-    background-color: var(--tono-fuerte);
+    background-color: var(--tono-fuerte1);
 }
 
 #Encabezado h1, #Encabezado h2 {
     color: white;
 }
 
+/* Estilos de Bienvenida */
+
 #BienvenidaPadre {
     background-color: var(--tono-suave1);
 }
 
+/* Estilos de la sección de horarios */
+
 #HorariosPadre {
-    background-color: var(--tono-medio);
+    background-color: var(--tono-medio2);
 }
 
-#Izq, #Cent, #Der, .Actividad {
+#Izq, #Cent, #Der {
     background-color: var(--tono-suave1);
 }
 
-#Izq hr, #Cent hr, #Der hr, .Actividad hr {
+#Izq hr, #Cent hr, #Der hr {
     border: 1px solid white;
-}
-
-#ActividadesPadre {
-    background-color: var(--tono-suave1);
-}
-
-.containerHijo {
-    background-color: white;
 }
 
 .controlDeCarrusel button {
@@ -69,5 +84,29 @@ hr {
 }
 
 .indicadoresDeCarrusel .indicador.activo {
-    background-color: var(--tono-medio);
+    background-color: var(--tono-medio1);
+}
+
+/* Estilos de la sección de actividades */
+
+#ActividadesPadre {
+    background-color: var(--tono-suave1);
+}
+
+.Actividad hr {
+    height: 0.5px;
+    border-color: var(--tono-fuerte1);
+}
+
+.controlDeCarrusel2 button {
+    background: none;
+    color: var(--tono-boton-carrusel);
+}
+
+.indicadoresDeCarrusel2 .indicador2 {
+    background-color: var(--tono-suave1);
+}
+
+.indicadoresDeCarrusel2 .indicador2.activo {
+    background-color: var(--tono-medio1);
 }

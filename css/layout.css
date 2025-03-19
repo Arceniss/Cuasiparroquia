@@ -1,127 +1,112 @@
 /* Estilos generales */
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
+html {
     font-family: Calibri, sans-serif;
-    font-size: 14pt;
+    font-size: 20px;
     font-weight: 300;
 }
 
 h1 {
-    line-height: 1rem;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 h2 {
-    line-height: 1rem;
+    font-size: 2rem;
     font-weight: 300;
-    font-size: 2.5rem;
-    padding: 1rem 0;
 }
 
 h3 {
-    line-height: normal;
-    font-size: 1.7rem;
-    font-weight: 500;
-    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
-    margin-top: 20px;
     text-align: left;
-    font-size: 1.5rem;
-}
-
-span {
-    font-size: 1.25rem;
+    margin-top: 1rem;
 }
 
 .containerPadre {
-    width: 100%-20px;
-    padding: 50px 10px;
-    display: grid;
+    width: 100%;
+    padding: 3rem 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .containerHijo {
-    margin: 0 10px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0.5px 0.5px 4px 1px #c0c0c0
+    flex: 1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.5px 0.5px 5px 0.5px var(--tono-medio1);
 }
 
 /* Estilos del encabezado */
 
 #Encabezado {
-    padding: 20px 20px 40px ;
+    padding: 1rem;
     border-radius: 0;
+    line-height: 1.5rem;
 }
 
 #Encabezado h2 {
-    font-weight: 100; 
     font-size: 1.5rem;
-    line-height: 0.5rem;
-}
-
-/* Estilos de la bienvenida */
-
-#BienvenidaPadre {	
-    grid-template-columns: 1fr 1fr;
+    font-weight: 100; 
 }
 
 /* Estilos de los horarios */
 
 .espacioVisible {
-    margin-top: 20px;
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 10px;
+    row-gap: 1rem;
     width: 100%;
     overflow: hidden;
 }
 
 .Horarios {
     display: flex; 
-    gap: 1%;
+    gap: 1rem;
     transition: transform 0.5s ease-in-out;
 }
 
 .Horarios hr {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 #Izq, #Cent, #Der {
-    padding: 10px;
-    box-sizing: border-box; 
+    padding: 0.5rem;
     width: 33.33%; 
-    border-radius: 10px;
+    border-radius: 0.5rem;
+    box-sizing: border-box; 
 }
 
 #Izq div, #Cent div, #Der div {
     display: flex;
     flex-wrap: nowrap; 
     justify-content: flex-start;
-    gap: 10px; 
+    gap: 0.5rem; 
 }
 
 #Izq div span, #Cent div span, #Der div span {
     flex: 0 1 auto;
-    padding: 2px 0;
-    width: auto; 
+    padding: 0;
+    /* width: auto; */
 }
-
-/* Estilos de los botones y los indicadores */
 
 #carruselDeHorarios .espacioVisible .controlDeCarrusel {
     display: none;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0.5rem;
 }
 
 .controlDeCarrusel button {
@@ -147,50 +132,68 @@ span {
 
 /* Estilos de Actividades */
 
-.Actividades {
-    display: flex; 
-    transition: transform 0.5s ease-in-out;
-    width: calc(100%*3);
+#carruselDeActividades {
+    position: relative;
+    width: 100%;
 }
 
-.marcoDeActividad {
-    flex: 0 0 11.11%;
-    padding: 0 0.5%;
+.espacioVisible2 {
+    overflow: hidden; 
+}
+
+.Actividades {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+    width: calc(100% * 3);
 }
 
 .Actividad {
-    padding: 10px;
-    border-radius: 10px;
-    /*box-shadow: 0.5px 0.5px 4px 1px #c0c0c0;*/
+    flex: 0 0 16.66%; 
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.Fecha {
+    font-weight: bold;
+    background-color: var(--tono-medio2);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.Actividad h3 {
+    padding: 0.5rem 0.5rem 0;
 }
 
 .Actividades hr {
-    margin-bottom: 20px;
-}
-
-.Actividad div {
-    display: flex;
-    flex-wrap: nowrap; 
-    justify-content: flex-start;
-    gap: 10px; 
+    margin-bottom: 1rem;
 }
 
 .Actividad span {
     flex: 0 1 auto;
-    padding: 2px 0;
+    padding: 0;
     width: auto; 
 }
 
 .alinearDer {
     text-align: right;
-    margin-right: 10px;
+    margin-right: 0.5rem;
+}
+
+/* Estilos de carrusel de actividades */
+
+#carruselDeActividades .espacioVisible2 .controlDeCarrusel2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
 }
 
 .controlDeCarrusel2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0.5rem;
 }
 
 .controlDeCarrusel2 button {
@@ -199,17 +202,61 @@ span {
     cursor: pointer;
 }
 
-#btnAnterior {
+.indicadoresDeCarrusel2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.indicadoresDeCarrusel2 .indicador2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#btnAnterior2 {
     margin-right: auto;
 }
 
+/* Estilos de footer */
+
+footer {
+
+    /*text-align: center;*/
+    font-size: medium;
+    padding: 1rem;
+    background-color: var(--tono-fuerte2);
+    color: var(--tono-suave1);
+}
+
+footer div {
+    display: flex;
+}
+footer div div {
+    display: block;
+}
+
+#espacio {
+    flex: 1;
+}
+
+footer div div p {
+    text-align: center;
+    color: var(--tono-suave1);
+    margin: 0;
+}
+
+/* Estilos para dispositivos móviles */
 
 @media (max-width: 720px) {
 
     /* Estilos generales */
-
-    body {
-        font-size: 14pt;
+    
+    html {
+        font-size: 16px;
     }
 
     h1 {
@@ -218,35 +265,26 @@ span {
 
     h2 {
         font-size: 1.5rem;
-        font-weight: 300;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    p {
-        font-size: 1.0rem;
-        line-height: 1.2rem;
-    }
-
-    span {
-        font-size: 0.9rem;
     }
 
     /* Estilos del encabezado */
+    
+    #Encabezado {
+        padding: 1rem;
+        border-radius: 0;
+        line-height: 1.5rem;
+    }
 
     #Encabezado h2 {
+        font-size: 1.2rem;
         font-weight: 200; 
-        font-size: 1rem;
-        line-height: 0rem;
     }
 
     /* Estilos de la bienvenida */
 
     #BienvenidaPadre {
         display: grid;
-        row-gap: 20px;
+        row-gap: 1rem;
         grid-template-columns: 1fr;
     }
 
@@ -259,17 +297,43 @@ span {
     }
 
     .Horarios div p {
-        margin-bottom: 10px;
-    }        
+        margin-bottom: 0.5rem;
+    }
 
     /* Estilos de los botones y los indicadores */
     
-    .controlDeCarrusel {
+    #carruselDeHorarios .espacioVisible .controlDeCarrusel, .indicadoresDeCarrusel {
         display: flex;
     }
+ 
+    /* Estilos de las actividades */
 
-    .indicadoresDeCarrusel {
-        display: flex;
+    .Actividades {
+        width: calc(100%*6);
+        gap: 0;
+        flex-wrap: wrap;
     }
 
+    .Actividad {
+        padding: 0;
+    }
+
+    .Fecha {
+        margin-top: 1rem;
+    }
+
+    .Actividad table {
+        font-size: 0.75rem;
+    }
+
+    /* Estilos de footer */
+
+    footer {
+        font-size: 0.6rem;
+    }
+
+    footer div {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
 }
